@@ -1,0 +1,486 @@
+# Company job boards the scouts read (public ATS APIs only). Verified 25 Sep 2026.
+# `slugs` = candidates tried in order; the first that works is remembered.
+# Add any company: find its careers page, look for greenhouse.io / lever.co / ashbyhq.com /
+# smartrecruiters.com / workable.com in the URL, and copy the slug. Or run the
+# "Fixer" agent and Claude finds it. Firms with their own career sites (Citadel, SIG,
+# Two Sigma, D. E. Shaw, G-Research, Millennium, Google DeepMind, Revolut, Bloomberg...)
+# are covered by the research agents instead.
+quant:
+- name: Jane Street
+  ats: greenhouse
+  slugs:
+  - janestreet
+- name: Hudson River Trading
+  ats: greenhouse
+  slugs:
+  - wehrtyou
+- name: Jump Trading
+  ats: greenhouse
+  slugs:
+  - jumptrading
+- name: IMC Trading
+  ats: greenhouse
+  slugs:
+  - imc
+- name: Optiver
+  ats: greenhouse
+  slugs:
+  - optiverus
+- name: DRW
+  ats: greenhouse
+  slugs:
+  - drweng
+  - drw
+- name: Virtu Financial
+  ats: greenhouse
+  slugs:
+  - virtu
+- name: Tower Research Capital
+  ats: greenhouse
+  slugs:
+  - towerresearchcapital
+- name: Akuna Capital
+  ats: greenhouse
+  slugs:
+  - akunacapital
+- name: Point72
+  ats: greenhouse
+  slugs:
+  - point72
+- name: Five Rings
+  ats: greenhouse
+  slugs:
+  - fiveringsllc
+- name: Squarepoint Capital
+  ats: greenhouse
+  slugs:
+  - squarepointcapital
+- name: XTX Markets
+  ats: greenhouse
+  slugs:
+  - xtxmarkets
+  - xtxmarketstechnologies
+- name: Flow Traders
+  ats: greenhouse
+  slugs:
+  - flowtraders
+- name: Old Mission
+  ats: greenhouse
+  slugs:
+  - oldmissioncapital
+- name: Chicago Trading Company
+  ats: greenhouse
+  slugs:
+  - chicagotrading
+- name: Quadrature Capital
+  ats: greenhouse
+  slugs:
+  - quadrature
+  - quadraturecapital
+- name: Qube Research & Technologies
+  ats: greenhouse
+  slugs:
+  - quberesearchandtechnologies
+- name: Graviton Research Capital
+  ats: greenhouse
+  slugs:
+  - gravitonresearchcapital
+- name: Maven Securities
+  ats: ashby
+  slugs:
+  - maven
+- name: Man Group
+  ats: greenhouse
+  slugs:
+  - mangroup
+- name: WorldQuant
+  ats: greenhouse
+  slugs:
+  - worldquant
+- name: Winton
+  ats: greenhouse
+  slugs:
+  - winton
+- name: Schonfeld
+  ats: greenhouse
+  slugs:
+  - schonfeld
+- name: Mako Trading
+  ats: greenhouse
+  slugs:
+  - mako
+bigtech_ai:
+- name: Anthropic
+  ats: greenhouse
+  slugs:
+  - anthropic
+- name: OpenAI
+  ats: ashby
+  slugs:
+  - openai
+- name: xAI
+  ats: greenhouse
+  slugs:
+  - xai
+- name: Isomorphic Labs
+  ats: greenhouse
+  slugs:
+  - isomorphiclabs
+- name: Stripe
+  ats: greenhouse
+  slugs:
+  - stripe
+- name: Databricks
+  ats: greenhouse
+  slugs:
+  - databricks
+- name: Figma
+  ats: greenhouse
+  slugs:
+  - figma
+- name: Airbnb
+  ats: greenhouse
+  slugs:
+  - airbnb
+- name: Cloudflare
+  ats: greenhouse
+  slugs:
+  - cloudflare
+- name: Datadog
+  ats: greenhouse
+  slugs:
+  - datadog
+- name: Robinhood
+  ats: greenhouse
+  slugs:
+  - robinhood
+- name: Coinbase
+  ats: greenhouse
+  slugs:
+  - coinbase
+- name: Discord
+  ats: greenhouse
+  slugs:
+  - discord
+- name: Dropbox
+  ats: greenhouse
+  slugs:
+  - dropbox
+- name: GitLab
+  ats: greenhouse
+  slugs:
+  - gitlab
+- name: Pinterest
+  ats: greenhouse
+  slugs:
+  - pinterest
+- name: Reddit
+  ats: greenhouse
+  slugs:
+  - reddit
+- name: Lyft
+  ats: greenhouse
+  slugs:
+  - lyft
+- name: Instacart
+  ats: greenhouse
+  slugs:
+  - instacart
+- name: Roblox
+  ats: greenhouse
+  slugs:
+  - roblox
+- name: Duolingo
+  ats: greenhouse
+  slugs:
+  - duolingo
+- name: Scale AI
+  ats: greenhouse
+  slugs:
+  - scaleai
+- name: MongoDB
+  ats: greenhouse
+  slugs:
+  - mongodb
+- name: Elastic
+  ats: greenhouse
+  slugs:
+  - elastic
+- name: Samsara
+  ats: greenhouse
+  slugs:
+  - samsara
+- name: Twilio
+  ats: greenhouse
+  slugs:
+  - twilio
+- name: Okta
+  ats: greenhouse
+  slugs:
+  - okta
+- name: Vercel
+  ats: greenhouse
+  slugs:
+  - vercel
+- name: Glean
+  ats: greenhouse
+  slugs:
+  - gleanwork
+- name: Together AI
+  ats: greenhouse
+  slugs:
+  - togetherai
+- name: Figure AI
+  ats: greenhouse
+  slugs:
+  - figureai
+- name: Intercom
+  ats: greenhouse
+  slugs:
+  - intercom
+- name: Canonical
+  ats: greenhouse
+  slugs:
+  - canonical
+- name: Graphcore
+  ats: greenhouse
+  slugs:
+  - graphcore
+- name: Stability AI
+  ats: greenhouse
+  slugs:
+  - stabilityai
+- name: Palantir
+  ats: lever
+  slugs:
+  - palantir
+- name: Spotify
+  ats: lever
+  slugs:
+  - spotify
+- name: Cohere
+  ats: ashby
+  slugs:
+  - cohere
+- name: ElevenLabs
+  ats: ashby
+  slugs:
+  - elevenlabs
+- name: Perplexity
+  ats: ashby
+  slugs:
+  - perplexity
+- name: Anysphere (Cursor)
+  ats: ashby
+  slugs:
+  - anysphere
+  - cursor
+- name: Ramp
+  ats: ashby
+  slugs:
+  - ramp
+- name: Notion
+  ats: ashby
+  slugs:
+  - notion
+- name: Linear
+  ats: ashby
+  slugs:
+  - linear
+- name: Replit
+  ats: ashby
+  slugs:
+  - replit
+- name: Modal
+  ats: ashby
+  slugs:
+  - modal
+- name: Harvey
+  ats: ashby
+  slugs:
+  - harvey
+- name: Supabase
+  ats: ashby
+  slugs:
+  - supabase
+- name: Character.AI
+  ats: ashby
+  slugs:
+  - character
+- name: Runway
+  ats: ashby
+  slugs:
+  - runway
+- name: Hugging Face
+  ats: workable
+  slugs:
+  - huggingface
+- name: Wayve
+  ats: greenhouse
+  slugs:
+  - wayve
+- name: PolyAI
+  ats: greenhouse
+  slugs:
+  - polyai
+- name: Faculty AI
+  ats: ashby
+  slugs:
+  - faculty
+- name: NVIDIA
+  ats: workday
+  host: nvidia.wd5.myworkdayjobs.com
+  tenant: nvidia
+  site: NVIDIAExternalCareerSite
+  queries:
+  - intern
+  - graduate
+  - new college grad
+  - software engineer
+  - deep learning
+- name: Adobe
+  ats: workday
+  host: adobe.wd5.myworkdayjobs.com
+  tenant: adobe
+  site: external_experienced
+  queries:
+  - intern
+  - graduate
+  - software engineer
+  - machine learning
+uk_eu:
+- name: Monzo
+  ats: greenhouse
+  slugs:
+  - monzo
+- name: Wise
+  ats: greenhouse
+  slugs:
+  - wise
+- name: Deliveroo
+  ats: greenhouse
+  slugs:
+  - deliveroo
+- name: GoCardless
+  ats: greenhouse
+  slugs:
+  - gocardless
+- name: FanDuel / Flutter (Edinburgh)
+  ats: greenhouse
+  slugs:
+  - fanduel
+- name: Thought Machine
+  ats: ashby
+  slugs:
+  - thought-machine
+- name: Helsing
+  ats: greenhouse
+  slugs:
+  - helsing
+- name: Synthesia
+  ats: ashby
+  slugs:
+  - synthesia
+- name: N26
+  ats: greenhouse
+  slugs:
+  - n26
+- name: Trade Republic
+  ats: greenhouse
+  slugs:
+  - traderepublic
+- name: Celonis
+  ats: greenhouse
+  slugs:
+  - celonis
+- name: Adyen
+  ats: greenhouse
+  slugs:
+  - adyen
+- name: Miro
+  ats: greenhouse
+  slugs:
+  - realtimeboardglobal
+- name: Starling Bank
+  ats: workable
+  slugs:
+  - starling-bank
+- name: Tide
+  ats: greenhouse
+  slugs:
+  - tide
+- name: Trainline
+  ats: ashby
+  slugs:
+  - trainline
+- name: Zilch
+  ats: ashby
+  slugs:
+  - zilch
+- name: Cleo
+  ats: greenhouse
+  slugs:
+  - cleo
+- name: Lendable
+  ats: ashby
+  slugs:
+  - lendable
+- name: Marshmallow
+  ats: ashby
+  slugs:
+  - marshmallow
+- name: Wayflyer
+  ats: ashby
+  slugs:
+  - wayflyer
+salesforce:
+- name: Salesforce (incl. Slack, Tableau, MuleSoft)
+  ats: workday
+  host: salesforce.wd12.myworkdayjobs.com
+  tenant: salesforce
+  site: External_Career_Site
+  queries:
+  - futureforce
+  - intern
+  - graduate
+  - software engineer
+  - AMTS
+  - slack
+  - agentforce
+- name: Gearset
+  ats: ashby
+  slugs:
+  - gearset
+- name: Veeva Systems
+  ats: lever
+  slugs:
+  - veeva
+- name: HubSpot
+  ats: greenhouse
+  slugs:
+  - hubspotjobs
+india:
+- name: Rubrik
+  ats: greenhouse
+  slugs:
+  - rubrik
+- name: CRED
+  ats: lever
+  slugs:
+  - cred
+- name: Meesho
+  ats: lever
+  slugs:
+  - meesho
+- name: Groww
+  ats: greenhouse
+  slugs:
+  - groww
+- name: Swiggy
+  ats: smartrecruiters
+  slugs:
+  - swiggy
+- name: Sarvam AI
+  ats: ashby
+  slugs:
+  - sarvam

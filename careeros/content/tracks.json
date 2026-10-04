@@ -1,0 +1,2175 @@
+{
+ "version": 1,
+ "note": "Only free, legitimate resources are linked. Your own PDFs from books_dir are matched by filename and served locally only - they are never part of the repo.",
+ "tracks": [
+  {
+   "id": "maths",
+   "title": "Mathematics",
+   "icon": "∑",
+   "why": "Quant, ML and research interviews all assume fluent linear algebra, calculus and proof-writing.",
+   "modules": [
+    {
+     "id": "maths-proofs",
+     "title": "Proofs, logic & discrete maths",
+     "hours": 20,
+     "topics": [
+      "Induction and strong induction",
+      "Contradiction and contrapositive",
+      "Sets, functions, relations",
+      "Counting basics, pigeonhole",
+      "Graph basics",
+      "Modular arithmetic"
+     ],
+     "resources": [
+      {
+       "t": "MIT 6.042J Mathematics for Computer Science (lectures + free text)",
+       "u": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/"
+      },
+      {
+       "t": "Book of Proof - Hammack (free)",
+       "u": "https://richardhammack.github.io/BookOfProof/"
+      }
+     ],
+     "books": [
+      "princeton companion",
+      "mathematics"
+     ],
+     "checkpoint": "Write 10 clean proofs (induction, contradiction, pigeonhole) without looking anything up.",
+     "level": 1
+    },
+    {
+     "id": "maths-linalg",
+     "title": "Linear algebra",
+     "hours": 30,
+     "topics": [
+      "Vectors, span, basis, rank",
+      "Matrix multiplication as composition",
+      "Determinants",
+      "Eigenvalues/eigenvectors, diagonalisation",
+      "Orthogonality, projections, least squares",
+      "SVD and PCA",
+      "Positive definite matrices"
+     ],
+     "resources": [
+      {
+       "t": "Gilbert Strang - MIT 18.06 Linear Algebra",
+       "u": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+      },
+      {
+       "t": "3Blue1Brown - Essence of Linear Algebra",
+       "u": "https://www.3blue1brown.com/topics/linear-algebra"
+      },
+      {
+       "t": "Mathematics for Machine Learning (free book) - ch. 2-4",
+       "u": "https://mml-book.github.io/"
+      }
+     ],
+     "books": [
+      "linear algebra",
+      "princeton companion"
+     ],
+     "checkpoint": "Derive least squares via projections; compute an SVD by hand for a 2x2; explain PCA in 2 minutes.",
+     "level": 2
+    },
+    {
+     "id": "maths-calculus",
+     "title": "Calculus & multivariable calculus",
+     "hours": 25,
+     "topics": [
+      "Limits, derivatives, Taylor series",
+      "Integration techniques",
+      "Partial derivatives, gradients, Jacobian, Hessian",
+      "Chain rule in many variables (backprop)",
+      "Multiple integrals, change of variables",
+      "Lagrange multipliers"
+     ],
+     "resources": [
+      {
+       "t": "3Blue1Brown - Essence of Calculus",
+       "u": "https://www.3blue1brown.com/topics/calculus"
+      },
+      {
+       "t": "MIT 18.01SC Single Variable Calculus",
+       "u": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"
+      },
+      {
+       "t": "MIT 18.02SC Multivariable Calculus",
+       "u": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/"
+      },
+      {
+       "t": "Mathematics for Machine Learning - ch. 5 (vector calculus)",
+       "u": "https://mml-book.github.io/"
+      }
+     ],
+     "books": [
+      "calculus",
+      "princeton companion"
+     ],
+     "checkpoint": "Derive the gradient of softmax cross-entropy and of a 2-layer MLP by hand.",
+     "level": 2
+    },
+    {
+     "id": "maths-optim",
+     "title": "Optimisation",
+     "hours": 15,
+     "topics": [
+      "Convex sets and functions",
+      "Gradient descent, momentum, Adam",
+      "Newton's method",
+      "Constrained optimisation, KKT",
+      "Duality (intuition)"
+     ],
+     "resources": [
+      {
+       "t": "Boyd & Vandenberghe - Convex Optimization (free PDF)",
+       "u": "https://web.stanford.edu/~boyd/cvxbook/"
+      },
+      {
+       "t": "Mathematics for Machine Learning - ch. 7",
+       "u": "https://mml-book.github.io/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Implement GD, momentum and Adam in NumPy on a toy problem and explain why they differ.",
+     "level": 3
+    },
+    {
+     "id": "maths-stoch",
+     "title": "Stochastic processes for finance (quant)",
+     "hours": 20,
+     "topics": [
+      "Brownian motion",
+      "Ito's lemma (intuition + use)",
+      "Geometric Brownian motion",
+      "Black-Scholes derivation sketch",
+      "Martingales and risk-neutral pricing"
+     ],
+     "resources": [
+      {
+       "t": "MIT 18.S096 Topics in Mathematics with Applications in Finance",
+       "u": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/"
+      }
+     ],
+     "books": [
+      "stochastic",
+      "shreve",
+      "hull"
+     ],
+     "checkpoint": "Price a European call by Monte Carlo and match Black-Scholes to 3 decimal places.",
+     "level": 4
+    },
+    {
+     "id": "maths-frontier",
+     "title": "Mathematics of deep learning",
+     "level": 5,
+     "hours": 40,
+     "topics": [
+      "Neural tangent kernel and infinite-width limits",
+      "Effective theory of deep networks",
+      "Optimisation landscapes"
+     ],
+     "resources": [
+      {
+       "t": "Roberts, Yaida & Hanin — The Principles of Deep Learning Theory (arXiv)",
+       "u": "https://arxiv.org/abs/2106.10165"
+      },
+      {
+       "t": "Understanding Deep Learning — Prince (free PDF)",
+       "u": "https://udlbook.github.io/udlbook/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Explain in one page what the NTK limit predicts and where it breaks."
+    }
+   ],
+   "category": "core"
+  },
+  {
+   "id": "probability",
+   "title": "Probability & Statistics",
+   "icon": "P",
+   "why": "The single most-tested topic in quant interviews and the base of data science and ML.",
+   "modules": [
+    {
+     "id": "prob-counting",
+     "title": "Counting & combinatorics",
+     "hours": 10,
+     "topics": [
+      "Permutations and combinations",
+      "Stars and bars",
+      "Inclusion-exclusion",
+      "Binomial identities"
+     ],
+     "resources": [
+      {
+       "t": "Blitzstein & Hwang - Introduction to Probability (free PDF), ch. 1",
+       "u": "http://probabilitybook.net/"
+      },
+      {
+       "t": "Harvard Stat 110 lectures",
+       "u": "https://projects.iq.harvard.edu/stat110"
+      }
+     ],
+     "books": [
+      "probability"
+     ],
+     "checkpoint": "Solve 20 counting problems at quant-interview speed (under 3 min each).",
+     "level": 1
+    },
+    {
+     "id": "prob-core",
+     "title": "Conditional probability & Bayes",
+     "hours": 15,
+     "topics": [
+      "Conditioning, independence",
+      "Law of total probability",
+      "Bayes' rule",
+      "Classic paradoxes (Monty Hall, boy-girl)"
+     ],
+     "resources": [
+      {
+       "t": "Blitzstein & Hwang ch. 2",
+       "u": "http://probabilitybook.net/"
+      },
+      {
+       "t": "Seeing Theory (visual)",
+       "u": "https://seeing-theory.brown.edu/"
+      }
+     ],
+     "books": [
+      "probability"
+     ],
+     "checkpoint": "Explain Bayes on a medical-test example with base rates, no notes.",
+     "level": 1
+    },
+    {
+     "id": "prob-rv",
+     "title": "Random variables, distributions, expectation",
+     "hours": 20,
+     "topics": [
+      "Discrete & continuous distributions",
+      "Linearity of expectation, indicator trick",
+      "Variance, covariance, correlation",
+      "Conditional expectation, law of total expectation",
+      "Joint distributions, transformations",
+      "Order statistics",
+      "LLN and CLT"
+     ],
+     "resources": [
+      {
+       "t": "Blitzstein & Hwang ch. 3-10",
+       "u": "http://probabilitybook.net/"
+      },
+      {
+       "t": "Stat 110 problem sets",
+       "u": "https://projects.iq.harvard.edu/stat110"
+      }
+     ],
+     "books": [
+      "probability"
+     ],
+     "checkpoint": "Expected number of coin flips to see HH vs HT - derive both with first-step analysis.",
+     "level": 2
+    },
+    {
+     "id": "prob-brainteasers",
+     "title": "Brainteasers & mental maths (quant)",
+     "hours": 25,
+     "topics": [
+      "Dice/cards/coins puzzles",
+      "Expected value games and betting",
+      "Fast arithmetic (zetamac 60+)",
+      "Estimation / Fermi questions"
+     ],
+     "resources": [
+      {
+       "t": "Brainstellar puzzles",
+       "u": "https://www.brainstellar.com/"
+      },
+      {
+       "t": "Jane Street monthly puzzles",
+       "u": "https://www.janestreet.com/puzzles/"
+      },
+      {
+       "t": "Zetamac arithmetic drill",
+       "u": "https://arithmetic.zetamac.com/"
+      },
+      {
+       "t": "QuantGuide question bank",
+       "u": "https://www.quantguide.io/"
+      }
+     ],
+     "books": [
+      "green book",
+      "heard on the street",
+      "quant"
+     ],
+     "checkpoint": "Zetamac score 60+ on default settings; 50 brainteasers solved.",
+     "level": 2
+    },
+    {
+     "id": "prob-markov",
+     "title": "Markov chains, random walks, martingales",
+     "hours": 12,
+     "topics": [
+      "First-step analysis",
+      "Gambler's ruin",
+      "Stationary distributions",
+      "Optional stopping (intuition)"
+     ],
+     "resources": [
+      {
+       "t": "Blitzstein & Hwang ch. 11",
+       "u": "http://probabilitybook.net/"
+      }
+     ],
+     "books": [
+      "probability"
+     ],
+     "checkpoint": "Solve gambler's ruin with p != 1/2 from scratch.",
+     "level": 3
+    },
+    {
+     "id": "prob-inference",
+     "title": "Statistical inference",
+     "hours": 20,
+     "topics": [
+      "MLE and method of moments",
+      "Bias-variance",
+      "Confidence intervals",
+      "Hypothesis tests, p-values, power",
+      "Multiple testing",
+      "Bootstrap"
+     ],
+     "resources": [
+      {
+       "t": "Think Stats (free)",
+       "u": "https://greenteapress.com/wp/think-stats-2e/"
+      },
+      {
+       "t": "StatQuest (video explainers)",
+       "u": "https://statquest.org/"
+      }
+     ],
+     "books": [
+      "statistic"
+     ],
+     "checkpoint": "Design an A/B test: sample size, power, and what you'd do if you peeked.",
+     "level": 3
+    },
+    {
+     "id": "prob-regression",
+     "title": "Regression & statistical learning",
+     "hours": 20,
+     "topics": [
+      "Linear regression assumptions & diagnostics",
+      "Regularisation (ridge, lasso)",
+      "Logistic regression",
+      "Cross-validation",
+      "Overfitting in backtests"
+     ],
+     "resources": [
+      {
+       "t": "An Introduction to Statistical Learning (free, with Python labs)",
+       "u": "https://www.statlearning.com/"
+      }
+     ],
+     "books": [
+      "statistical learning"
+     ],
+     "checkpoint": "Fit and interpret a regularised regression; explain every number in the summary.",
+     "level": 3
+    },
+    {
+     "id": "prob-hdp",
+     "title": "Measure-theoretic & high-dimensional probability",
+     "level": 4,
+     "hours": 40,
+     "topics": [
+      "Measure-theoretic foundations",
+      "Martingale convergence",
+      "Concentration inequalities",
+      "Random matrices"
+     ],
+     "resources": [
+      {
+       "t": "Durrett — Probability: Theory and Examples (free author PDF)",
+       "u": "https://services.math.duke.edu/~rtd/PTE/pte.html"
+      },
+      {
+       "t": "Vershynin — High-Dimensional Probability (free author PDF)",
+       "u": "https://www.math.uci.edu/~rvershyn/"
+      }
+     ],
+     "books": [
+      "probability"
+     ],
+     "checkpoint": "Prove Hoeffding's inequality and apply it to a sampling question."
+    },
+    {
+     "id": "prob-frontier",
+     "title": "Probability behind generative models",
+     "level": 5,
+     "hours": 30,
+     "topics": [
+      "Diffusion as a stochastic process",
+      "Score matching",
+      "SDE view of generative models"
+     ],
+     "resources": [
+      {
+       "t": "Ho, Jain & Abbeel 2020 — Denoising Diffusion Probabilistic Models (arXiv)",
+       "u": "https://arxiv.org/abs/2006.11239"
+      },
+      {
+       "t": "Song et al. 2021 — Score-Based Generative Modeling through SDEs (arXiv)",
+       "u": "https://arxiv.org/abs/2011.13456"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Derive the DDPM training objective from the forward process."
+    }
+   ],
+   "category": "core"
+  },
+  {
+   "id": "cs",
+   "title": "CS Foundations",
+   "icon": "⚙",
+   "why": "Big-tech and quant-dev interviews dig into how the machine, OS and network really work.",
+   "modules": [
+    {
+     "id": "cs-arch",
+     "title": "Computer architecture & systems programming",
+     "hours": 20,
+     "topics": [
+      "Bits, integers, floating point",
+      "Memory hierarchy, caches, locality",
+      "Pointers and memory layout in C",
+      "Assembly basics",
+      "Nand to Tetris (optional build)"
+     ],
+     "resources": [
+      {
+       "t": "Nand2Tetris",
+       "u": "https://www.nand2tetris.org/"
+      },
+      {
+       "t": "MIT Missing Semester (tools)",
+       "u": "https://missing.csail.mit.edu/"
+      },
+      {
+       "t": "Teach Yourself CS (roadmap)",
+       "u": "https://teachyourselfcs.com/"
+      }
+     ],
+     "books": [
+      "computer systems",
+      "architecture"
+     ],
+     "checkpoint": "Explain why iterating a 2D array row-major vs column-major differs in speed, with numbers.",
+     "level": 1
+    },
+    {
+     "id": "cs-os",
+     "title": "Operating systems & concurrency",
+     "hours": 25,
+     "topics": [
+      "Processes vs threads",
+      "Scheduling",
+      "Virtual memory, paging, TLB",
+      "Locks, condition variables, semaphores",
+      "Deadlock",
+      "File systems, I/O, epoll"
+     ],
+     "resources": [
+      {
+       "t": "OSTEP - Operating Systems: Three Easy Pieces (free)",
+       "u": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+      }
+     ],
+     "books": [
+      "operating system"
+     ],
+     "checkpoint": "Write a thread-safe bounded queue in Python and in C++/Java; explain a deadlock you'd create and fix.",
+     "level": 2
+    },
+    {
+     "id": "cs-net",
+     "title": "Computer networks",
+     "hours": 15,
+     "topics": [
+      "TCP vs UDP, handshake, congestion control",
+      "HTTP/1.1, HTTP/2, HTTP/3",
+      "DNS, TLS",
+      "What happens when you type a URL",
+      "Sockets programming"
+     ],
+     "resources": [
+      {
+       "t": "Kurose & Ross video lectures (free)",
+       "u": "https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm"
+      },
+      {
+       "t": "Beej's Guide to Network Programming",
+       "u": "https://beej.us/guide/bgnet/"
+      }
+     ],
+     "books": [
+      "network"
+     ],
+     "checkpoint": "Build a tiny HTTP server with raw sockets; explain every step of a URL load.",
+     "level": 2
+    },
+    {
+     "id": "cs-db",
+     "title": "Database internals",
+     "hours": 20,
+     "topics": [
+      "Relational model & SQL",
+      "B-trees and LSM trees",
+      "Indexes and query plans",
+      "Transactions, isolation levels, MVCC",
+      "Write-ahead logging, recovery"
+     ],
+     "resources": [
+      {
+       "t": "CMU 15-445 Database Systems (lectures free)",
+       "u": "https://15445.courses.cs.cmu.edu/"
+      },
+      {
+       "t": "Use The Index, Luke",
+       "u": "https://use-the-index-luke.com/"
+      }
+     ],
+     "books": [
+      "data intensive"
+     ],
+     "checkpoint": "Explain read-committed vs repeatable-read vs serializable with a concrete anomaly each.",
+     "level": 3
+    },
+    {
+     "id": "cs-papers",
+     "title": "Classic systems papers",
+     "level": 4,
+     "hours": 25,
+     "topics": [
+      "MapReduce",
+      "Dynamo",
+      "Raft",
+      "What makes a systems paper last"
+     ],
+     "resources": [
+      {
+       "t": "Dean & Ghemawat — MapReduce (Google Research)",
+       "u": "https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/"
+      },
+      {
+       "t": "DeCandia et al. — Dynamo (SOSP 2007, PDF)",
+       "u": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf"
+      },
+      {
+       "t": "Ongaro & Ousterhout — In Search of an Understandable Consensus Algorithm (Raft, PDF)",
+       "u": "https://raft.github.io/raft.pdf"
+      }
+     ],
+     "books": [
+      "data intensive"
+     ],
+     "checkpoint": "Write a one-page review of each paper: problem, idea, trade-offs."
+    },
+    {
+     "id": "cs-frontier",
+     "title": "Systems for machine learning",
+     "level": 5,
+     "hours": 30,
+     "topics": [
+      "IO-aware attention kernels",
+      "Paged KV-cache memory for LLM serving",
+      "GPU memory hierarchy"
+     ],
+     "resources": [
+      {
+       "t": "Dao et al. 2022 — FlashAttention (arXiv)",
+       "u": "https://arxiv.org/abs/2205.14135"
+      },
+      {
+       "t": "Kwon et al. 2023 — PagedAttention / vLLM (arXiv)",
+       "u": "https://arxiv.org/abs/2309.06180"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Explain why FlashAttention is faster despite doing more FLOPs."
+    }
+   ],
+   "category": "core"
+  },
+  {
+   "id": "dsa",
+   "title": "DSA",
+   "icon": "⌘",
+   "why": "Every SWE/quant-dev loop has 1-4 coding rounds. Target: 300 quality problems, pattern-first.",
+   "modules": [
+    {
+     "id": "dsa-basics",
+     "title": "Complexity, arrays, strings, hashing",
+     "hours": 15,
+     "topics": [
+      "Big-O, amortised analysis",
+      "Prefix sums",
+      "Hash maps/sets patterns",
+      "String manipulation"
+     ],
+     "resources": [
+      {
+       "t": "NeetCode roadmap (free list)",
+       "u": "https://neetcode.io/roadmap"
+      },
+      {
+       "t": "MIT 6.006 Introduction to Algorithms",
+       "u": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+      }
+     ],
+     "books": [
+      "algorithms",
+      "introduction to algorithms"
+     ],
+     "checkpoint": "25 problems, each explained aloud with complexity.",
+     "level": 1
+    },
+    {
+     "id": "dsa-pointers",
+     "title": "Two pointers, sliding window, binary search",
+     "hours": 15,
+     "topics": [
+      "Opposite/same-direction pointers",
+      "Fixed and variable windows",
+      "Binary search on answer"
+     ],
+     "resources": [
+      {
+       "t": "NeetCode roadmap",
+       "u": "https://neetcode.io/roadmap"
+      },
+      {
+       "t": "CP-Algorithms",
+       "u": "https://cp-algorithms.com/"
+      }
+     ],
+     "books": [
+      "algorithms"
+     ],
+     "checkpoint": "30 problems; binary-search-on-answer explained from scratch.",
+     "level": 1
+    },
+    {
+     "id": "dsa-linear",
+     "title": "Linked lists, stacks, queues, heaps",
+     "hours": 15,
+     "topics": [
+      "Fast/slow pointers",
+      "Monotonic stack/queue",
+      "Heaps and top-k",
+      "LRU cache design"
+     ],
+     "resources": [
+      {
+       "t": "VisuAlgo (visualisations)",
+       "u": "https://visualgo.net/"
+      },
+      {
+       "t": "NeetCode roadmap",
+       "u": "https://neetcode.io/roadmap"
+      }
+     ],
+     "books": [
+      "algorithms"
+     ],
+     "checkpoint": "Implement a heap and an LRU cache from scratch, tested.",
+     "level": 2
+    },
+    {
+     "id": "dsa-trees",
+     "title": "Trees, BSTs, tries",
+     "hours": 20,
+     "topics": [
+      "DFS/BFS traversals",
+      "Recursion on trees",
+      "BST operations",
+      "Tries",
+      "Lowest common ancestor"
+     ],
+     "resources": [
+      {
+       "t": "Jeff Erickson - Algorithms (free)",
+       "u": "https://jeffe.cs.illinois.edu/teaching/algorithms/"
+      }
+     ],
+     "books": [
+      "algorithms"
+     ],
+     "checkpoint": "30 tree problems; serialise/deserialise a tree.",
+     "level": 2
+    },
+    {
+     "id": "dsa-graphs",
+     "title": "Graphs",
+     "hours": 25,
+     "topics": [
+      "BFS/DFS, connected components",
+      "Topological sort",
+      "Dijkstra, Bellman-Ford",
+      "Union-find",
+      "MST",
+      "Grid graphs"
+     ],
+     "resources": [
+      {
+       "t": "Competitive Programmer's Handbook (free PDF)",
+       "u": "https://cses.fi/book/book.pdf"
+      },
+      {
+       "t": "CSES problem set",
+       "u": "https://cses.fi/problemset/"
+      }
+     ],
+     "books": [
+      "algorithms"
+     ],
+     "checkpoint": "30 graph problems incl. Dijkstra and union-find from memory.",
+     "level": 3
+    },
+    {
+     "id": "dsa-dp",
+     "title": "Dynamic programming",
+     "hours": 30,
+     "topics": [
+      "1D/2D DP",
+      "Knapsack family",
+      "LIS/LCS/edit distance",
+      "Interval DP",
+      "DP on trees and bitmasks"
+     ],
+     "resources": [
+      {
+       "t": "Jeff Erickson - Algorithms ch. 3",
+       "u": "https://jeffe.cs.illinois.edu/teaching/algorithms/"
+      },
+      {
+       "t": "CSES DP section",
+       "u": "https://cses.fi/problemset/"
+      }
+     ],
+     "books": [
+      "algorithms"
+     ],
+     "checkpoint": "40 DP problems; state + transition written before code every time.",
+     "level": 3
+    },
+    {
+     "id": "dsa-greedy",
+     "title": "Greedy, intervals, backtracking",
+     "hours": 15,
+     "topics": [
+      "Exchange arguments",
+      "Interval scheduling/merging",
+      "Subsets, permutations, N-queens"
+     ],
+     "resources": [
+      {
+       "t": "NeetCode roadmap",
+       "u": "https://neetcode.io/roadmap"
+      }
+     ],
+     "books": [
+      "algorithms"
+     ],
+     "checkpoint": "Prove one greedy algorithm correct in writing.",
+     "level": 3
+    },
+    {
+     "id": "dsa-contest",
+     "title": "Timed practice & contests",
+     "hours": 30,
+     "topics": [
+      "LeetCode weekly contests",
+      "Codeforces Div 2/3",
+      "45-minute mock rounds"
+     ],
+     "resources": [
+      {
+       "t": "LeetCode",
+       "u": "https://leetcode.com/"
+      },
+      {
+       "t": "Codeforces",
+       "u": "https://codeforces.com/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Consistently solve 3/4 LeetCode weekly problems.",
+     "level": 4
+    },
+    {
+     "id": "dsa-advanced",
+     "title": "Advanced algorithms",
+     "level": 5,
+     "hours": 40,
+     "topics": [
+      "Amortised and randomised analysis",
+      "Network flow",
+      "Linear programming duality",
+      "Approximation algorithms"
+     ],
+     "resources": [
+      {
+       "t": "MIT 6.854J Advanced Algorithms (OCW)",
+       "u": "https://ocw.mit.edu/courses/6-854j-advanced-algorithms-fall-2008/"
+      },
+      {
+       "t": "Jeff Erickson — Algorithms (advanced chapters)",
+       "u": "https://jeffe.cs.illinois.edu/teaching/algorithms/"
+      }
+     ],
+     "books": [
+      "algorithms"
+     ],
+     "checkpoint": "Solve a max-flow / min-cut modelling problem from scratch."
+    }
+   ],
+   "category": "core"
+  },
+  {
+   "id": "software",
+   "title": "Software & Systems",
+   "icon": "⛁",
+   "why": "Backend, caching, databases, queues and distributed systems: what system design rounds and senior-feeling juniors are made of.",
+   "modules": [
+    {
+     "id": "sw-craft",
+     "title": "Engineering craft: clean code, testing, Git, reviews",
+     "hours": 10,
+     "topics": [
+      "Testing pyramid, TDD",
+      "Design patterns that matter",
+      "Refactoring",
+      "Git internals basics"
+     ],
+     "resources": [
+      {
+       "t": "Refactoring.Guru design patterns",
+       "u": "https://refactoring.guru/design-patterns"
+      },
+      {
+       "t": "Martin Fowler's articles",
+       "u": "https://martinfowler.com/"
+      },
+      {
+       "t": "MIT Missing Semester",
+       "u": "https://missing.csail.mit.edu/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Low-level design: parking lot / rate limiter class design with tests.",
+     "level": 1
+    },
+    {
+     "id": "sw-backend",
+     "title": "Backend & APIs",
+     "hours": 15,
+     "topics": [
+      "REST design, pagination, versioning",
+      "gRPC and protobuf",
+      "AuthN/AuthZ: OAuth 2.0, OIDC, JWT",
+      "Idempotency keys, retries, timeouts",
+      "Rate limiting",
+      "The Twelve-Factor App"
+     ],
+     "resources": [
+      {
+       "t": "The Twelve-Factor App",
+       "u": "https://12factor.net/"
+      },
+      {
+       "t": "AWS Builders' Library",
+       "u": "https://aws.amazon.com/builders-library/"
+      }
+     ],
+     "books": [
+      "microservices"
+     ],
+     "checkpoint": "Explain how your Salesforce AI Agent's approvals stay idempotent under retries.",
+     "level": 2
+    },
+    {
+     "id": "sw-data",
+     "title": "Databases in practice",
+     "hours": 15,
+     "topics": [
+      "Schema design & normalisation",
+      "Postgres indexes, EXPLAIN",
+      "Isolation levels in practice",
+      "Sharding and replication",
+      "SQL vs NoSQL trade-offs"
+     ],
+     "resources": [
+      {
+       "t": "PostgreSQL docs",
+       "u": "https://www.postgresql.org/docs/current/"
+      },
+      {
+       "t": "Use The Index, Luke",
+       "u": "https://use-the-index-luke.com/"
+      }
+     ],
+     "books": [
+      "data intensive"
+     ],
+     "checkpoint": "DDIA ch. 2-3 + 7 done with notes; optimise a slow query with EXPLAIN.",
+     "level": 2
+    },
+    {
+     "id": "sw-cache",
+     "title": "Caching",
+     "hours": 10,
+     "topics": [
+      "Cache-aside, write-through, write-back",
+      "Eviction (LRU/LFU), TTLs",
+      "Cache stampede, hot keys",
+      "Redis data structures",
+      "CDNs"
+     ],
+     "resources": [
+      {
+       "t": "Redis docs",
+       "u": "https://redis.io/docs/latest/"
+      },
+      {
+       "t": "System Design Primer - cache",
+       "u": "https://github.com/donnemartin/system-design-primer"
+      }
+     ],
+     "books": [
+      "system design interview",
+      "systemdesigninterview"
+     ],
+     "checkpoint": "Design a cache layer for a read-heavy API and defend invalidation.",
+     "level": 2
+    },
+    {
+     "id": "sw-cloud",
+     "title": "Cloud, containers & observability",
+     "hours": 12,
+     "topics": [
+      "Docker, images, layers",
+      "Kubernetes basics",
+      "Metrics, logs, traces (OpenTelemetry)",
+      "SLOs and error budgets"
+     ],
+     "resources": [
+      {
+       "t": "Docker - Get started",
+       "u": "https://docs.docker.com/get-started/"
+      },
+      {
+       "t": "Kubernetes basics",
+       "u": "https://kubernetes.io/docs/tutorials/kubernetes-basics/"
+      },
+      {
+       "t": "Google SRE books (free)",
+       "u": "https://sre.google/books/"
+      },
+      {
+       "t": "OpenTelemetry docs",
+       "u": "https://opentelemetry.io/docs/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Containerise one of your projects with health checks and metrics.",
+     "level": 2
+    },
+    {
+     "id": "sw-security",
+     "title": "Security basics",
+     "hours": 6,
+     "topics": [
+      "OWASP Top 10",
+      "Secrets management",
+      "SQL injection, XSS, CSRF",
+      "Least privilege"
+     ],
+     "resources": [
+      {
+       "t": "OWASP Top 10",
+       "u": "https://owasp.org/www-project-top-ten/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Threat-model one of your apps in one page.",
+     "level": 2
+    },
+    {
+     "id": "sw-queues",
+     "title": "Queues, streams & async processing",
+     "hours": 12,
+     "topics": [
+      "At-least-once vs exactly-once",
+      "Kafka partitions, consumer groups",
+      "Outbox pattern",
+      "Back-pressure",
+      "Sagas"
+     ],
+     "resources": [
+      {
+       "t": "Apache Kafka documentation",
+       "u": "https://kafka.apache.org/documentation/"
+      }
+     ],
+     "books": [
+      "data intensive",
+      "microservices"
+     ],
+     "checkpoint": "DDIA ch. 11 notes; design a notification pipeline.",
+     "level": 3
+    },
+    {
+     "id": "sw-dist",
+     "title": "Distributed systems",
+     "hours": 25,
+     "topics": [
+      "Replication (leader, multi-leader, leaderless)",
+      "Partitioning",
+      "Consistency models",
+      "Consensus: Raft",
+      "Clocks, ordering",
+      "CAP/PACELC"
+     ],
+     "resources": [
+      {
+       "t": "MIT 6.5840 (6.824) Distributed Systems",
+       "u": "https://pdos.csail.mit.edu/6.824/"
+      },
+      {
+       "t": "Raft visualisation",
+       "u": "https://raft.github.io/"
+      },
+      {
+       "t": "Jepsen consistency models",
+       "u": "https://jepsen.io/consistency"
+      }
+     ],
+     "books": [
+      "data intensive"
+     ],
+     "checkpoint": "DDIA ch. 5, 6, 8, 9 done; implement Raft leader election (6.824 lab 3A).",
+     "level": 3
+    },
+    {
+     "id": "sw-sysdesign",
+     "title": "System design interviews",
+     "hours": 30,
+     "topics": [
+      "Framework: requirements → API → data → scale → trade-offs",
+      "URL shortener, rate limiter, news feed, chat, search",
+      "Back-of-envelope estimation"
+     ],
+     "resources": [
+      {
+       "t": "System Design Primer",
+       "u": "https://github.com/donnemartin/system-design-primer"
+      },
+      {
+       "t": "Hello Interview - System Design in a Hurry",
+       "u": "https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction"
+      }
+     ],
+     "books": [
+      "system design interview",
+      "systemdesigninterview",
+      "dokumen.pub_system-design"
+     ],
+     "checkpoint": "Do 10 designs out loud in 45 minutes each, recorded.",
+     "level": 3
+    },
+    {
+     "id": "sw-perf",
+     "title": "Performance & profiling",
+     "hours": 10,
+     "topics": [
+      "Profilers (py-spy, perf)",
+      "Flame graphs",
+      "Amdahl's law",
+      "Latency numbers"
+     ],
+     "resources": [
+      {
+       "t": "Brendan Gregg - Linux performance",
+       "u": "https://www.brendangregg.com/linuxperf.html"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Retell your Voice-to-Video 77%/23% profiling story as a 3-minute answer.",
+     "level": 3
+    },
+    {
+     "id": "sw-frontier",
+     "title": "Frontier: LLM serving & AI infrastructure",
+     "level": 5,
+     "hours": 25,
+     "topics": [
+      "Batching and KV-cache management",
+      "Speculative decoding",
+      "Serving cost/latency trade-offs"
+     ],
+     "resources": [
+      {
+       "t": "Kwon et al. 2023 — PagedAttention / vLLM (arXiv)",
+       "u": "https://arxiv.org/abs/2309.06180"
+      },
+      {
+       "t": "Leviathan et al. 2023 — Fast Inference via Speculative Decoding (arXiv)",
+       "u": "https://arxiv.org/abs/2211.17192"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Design an LLM serving system for 1k req/s and defend its cost."
+    }
+   ],
+   "category": "core"
+  },
+  {
+   "id": "interview",
+   "title": "Interview Skills",
+   "icon": "☺",
+   "why": "Behavioural rounds and project deep-dives decide more offers than people think.",
+   "modules": [
+    {
+     "id": "iv-story",
+     "title": "Your story & project deep-dives",
+     "hours": 8,
+     "topics": [
+      "60-second intro",
+      "Voice-to-Video deep dive (profiling, GPU verification)",
+      "Salesforce AI Agent deep dive (risk engine, bound approvals)",
+      "A bug or defect you caught early (your own story)",
+      "What you'd do differently"
+     ],
+     "resources": [
+      {
+       "t": "Tech Interview Handbook - self introduction",
+       "u": "https://www.techinterviewhandbook.org/self-introduction/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Record your intro and each deep dive; under 2 minutes each, no filler.",
+     "level": 1
+    },
+    {
+     "id": "iv-behavioural",
+     "title": "Behavioural bank (STAR)",
+     "hours": 8,
+     "topics": [
+      "Conflict, failure, ambiguity, ownership, influence",
+      "Amazon Leadership Principles mapping",
+      "Questions to ask them"
+     ],
+     "resources": [
+      {
+       "t": "Tech Interview Handbook - behavioural",
+       "u": "https://www.techinterviewhandbook.org/behavioral-interview/"
+      },
+      {
+       "t": "Amazon Leadership Principles",
+       "u": "https://www.amazon.jobs/content/en/our-workplace/leadership-principles"
+      }
+     ],
+     "books": [],
+     "checkpoint": "12 STAR stories written; each mapped to 2+ principles.",
+     "level": 1
+    },
+    {
+     "id": "iv-coding",
+     "title": "Coding interview technique",
+     "hours": 6,
+     "topics": [
+      "Clarify → examples → approach → code → test",
+      "Thinking aloud",
+      "Handling being stuck"
+     ],
+     "resources": [
+      {
+       "t": "Tech Interview Handbook - coding",
+       "u": "https://www.techinterviewhandbook.org/coding-interview-prep/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "5 mocks with the Test tab examiner scoring communication.",
+     "level": 2
+    },
+    {
+     "id": "iv-offers",
+     "title": "Offers & negotiation",
+     "hours": 3,
+     "topics": [
+      "Comp structure: base, bonus, equity",
+      "Competing offers",
+      "UK vs India comp norms"
+     ],
+     "resources": [
+      {
+       "t": "levels.fyi (comp data)",
+       "u": "https://www.levels.fyi/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "A written negotiation plan with numbers for your top 5 targets.",
+     "level": 3
+    }
+   ],
+   "category": "core"
+  },
+  {
+   "id": "swe",
+   "title": "Software Engineer (Big Tech)",
+   "icon": "SWE",
+   "builds_on": [
+    "dsa",
+    "software",
+    "cs",
+    "interview"
+   ],
+   "why": "Google, Meta, Microsoft, Amazon, Bloomberg, Stripe, Databricks: 3-5 coding rounds + design + behavioural.",
+   "modules": [
+    {
+     "id": "swe-lang",
+     "title": "Language mastery (Python + one of Java/C++/Go)",
+     "hours": 15,
+     "topics": [
+      "Python internals: GIL, generators, dataclasses, typing",
+      "Java or C++ collections and memory model",
+      "Idiomatic code under time pressure"
+     ],
+     "resources": [
+      {
+       "t": "Python docs - tutorial & data model",
+       "u": "https://docs.python.org/3/reference/datamodel.html"
+      },
+      {
+       "t": "learncpp.com",
+       "u": "https://www.learncpp.com/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Solve 20 problems in your second language.",
+     "level": 2
+    },
+    {
+     "id": "swe-lld",
+     "title": "Object-oriented & low-level design",
+     "hours": 10,
+     "topics": [
+      "SOLID",
+      "Designing classes for parking lot, elevator, file system",
+      "Concurrency in LLD"
+     ],
+     "resources": [
+      {
+       "t": "Refactoring.Guru",
+       "u": "https://refactoring.guru/design-patterns"
+      }
+     ],
+     "books": [],
+     "checkpoint": "3 LLD problems coded with tests in 60 minutes each.",
+     "level": 3
+    },
+    {
+     "id": "swe-company",
+     "title": "Company-specific prep",
+     "hours": 10,
+     "topics": [
+      "Google: Googliness, clean code",
+      "Meta: speed, 2 problems/45 min",
+      "Amazon: LPs everywhere",
+      "Bloomberg: C++/systems",
+      "Stripe: practical coding, bug bash"
+     ],
+     "resources": [
+      {
+       "t": "Tech Interview Handbook - company guides",
+       "u": "https://www.techinterviewhandbook.org/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "One-page prep sheet per target company.",
+     "level": 3
+    }
+   ],
+   "category": "role"
+  },
+  {
+   "id": "quant_researcher",
+   "title": "Quant Researcher",
+   "icon": "QR",
+   "builds_on": [
+    "probability",
+    "maths",
+    "dsa"
+   ],
+   "why": "Research alpha from data. Heavy stats/ML, careful with overfitting.",
+   "modules": [
+    {
+     "id": "qr-ts",
+     "title": "Time series & forecasting",
+     "hours": 20,
+     "topics": [
+      "Stationarity, autocorrelation",
+      "ARIMA, GARCH",
+      "Cointegration, pairs",
+      "Forecast evaluation"
+     ],
+     "resources": [
+      {
+       "t": "Forecasting: Principles and Practice (free)",
+       "u": "https://otexts.com/fpp3/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Build a pairs-trading backtest with a proper out-of-sample test.",
+     "level": 3
+    },
+    {
+     "id": "qr-portfolio",
+     "title": "Portfolio theory & factor models",
+     "hours": 15,
+     "topics": [
+      "Mean-variance, efficient frontier",
+      "CAPM, Fama-French factors",
+      "Risk models, covariance shrinkage"
+     ],
+     "resources": [
+      {
+       "t": "MIT 15.401 Finance Theory I",
+       "u": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/"
+      },
+      {
+       "t": "MIT 18.S096",
+       "u": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/"
+      }
+     ],
+     "books": [
+      "security analysis"
+     ],
+     "checkpoint": "Explain why naive sample covariance fails for 500 stocks.",
+     "level": 3
+    },
+    {
+     "id": "qr-ml",
+     "title": "ML for markets & backtesting pitfalls",
+     "hours": 20,
+     "topics": [
+      "Look-ahead and survivorship bias",
+      "Purged cross-validation",
+      "Transaction costs",
+      "Kaggle market competitions"
+     ],
+     "resources": [
+      {
+       "t": "QuantStart articles",
+       "u": "https://www.quantstart.com/articles/"
+      },
+      {
+       "t": "Kaggle competitions (e.g. Jane Street, Optiver)",
+       "u": "https://www.kaggle.com/competitions"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Submit to one Kaggle market competition; write up what didn't work.",
+     "level": 4
+    }
+   ],
+   "category": "role"
+  },
+  {
+   "id": "quant_trader",
+   "title": "Quant Trader",
+   "icon": "QT",
+   "builds_on": [
+    "probability"
+   ],
+   "why": "Optiver, IMC, SIG, Jane Street, Flow Traders: fast maths, EV thinking, market-making games.",
+   "modules": [
+    {
+     "id": "qt-mental",
+     "title": "Mental maths & sequences",
+     "hours": 20,
+     "topics": [
+      "Arithmetic speed",
+      "Number sequences",
+      "Optiver-style 80-in-8 practice"
+     ],
+     "resources": [
+      {
+       "t": "Zetamac",
+       "u": "https://arithmetic.zetamac.com/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Zetamac 70+.",
+     "level": 1
+    },
+    {
+     "id": "qt-mm",
+     "title": "Market making & betting games",
+     "hours": 15,
+     "topics": [
+      "Bid/ask, edge, inventory",
+      "Kelly criterion",
+      "Adverse selection",
+      "Making markets on unknown quantities"
+     ],
+     "resources": [
+      {
+       "t": "QuantGuide",
+       "u": "https://www.quantguide.io/"
+      },
+      {
+       "t": "Jane Street puzzles",
+       "u": "https://www.janestreet.com/puzzles/"
+      }
+     ],
+     "books": [
+      "technical analysis"
+     ],
+     "checkpoint": "Play 10 market-making games with the examiner; explain your quotes.",
+     "level": 3
+    },
+    {
+     "id": "qt-options",
+     "title": "Options & the Greeks",
+     "hours": 15,
+     "topics": [
+      "Payoffs, put-call parity",
+      "Delta, gamma, vega, theta",
+      "Volatility smile",
+      "Hedging"
+     ],
+     "resources": [
+      {
+       "t": "Options Industry Council education",
+       "u": "https://www.optionseducation.org/"
+      },
+      {
+       "t": "CME Group education",
+       "u": "https://www.cmegroup.com/education.html"
+      }
+     ],
+     "books": [
+      "hull",
+      "options"
+     ],
+     "checkpoint": "Explain delta-hedging P&L for a long straddle.",
+     "level": 3
+    }
+   ],
+   "category": "role"
+  },
+  {
+   "id": "quant_dev",
+   "title": "Quant Developer / Low-latency",
+   "icon": "QD",
+   "builds_on": [
+    "cs",
+    "dsa",
+    "software"
+   ],
+   "why": "HRT, Jump, Citadel Securities, Tower, XTX: modern C++, Linux, networking, microseconds.",
+   "modules": [
+    {
+     "id": "qd-cpp",
+     "title": "Modern C++",
+     "hours": 30,
+     "topics": [
+      "RAII, move semantics, templates",
+      "STL internals",
+      "Memory model & atomics",
+      "Undefined behaviour"
+     ],
+     "resources": [
+      {
+       "t": "learncpp.com",
+       "u": "https://www.learncpp.com/"
+      },
+      {
+       "t": "cppreference",
+       "u": "https://en.cppreference.com/"
+      },
+      {
+       "t": "CppCon talks",
+       "u": "https://www.youtube.com/@CppCon"
+      }
+     ],
+     "books": [
+      "c++"
+     ],
+     "checkpoint": "Implement a lock-free SPSC ring buffer with benchmarks.",
+     "level": 2
+    },
+    {
+     "id": "qd-market",
+     "title": "Market data & exchange protocols",
+     "hours": 10,
+     "topics": [
+      "Order types, order books",
+      "FIX protocol",
+      "Nasdaq ITCH feed"
+     ],
+     "resources": [
+      {
+       "t": "FIX Trading Community standards",
+       "u": "https://www.fixtrading.org/standards/"
+      },
+      {
+       "t": "Nasdaq TotalView-ITCH spec",
+       "u": "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHspecification.pdf"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Parse a sample ITCH file into an order book.",
+     "level": 3
+    },
+    {
+     "id": "qd-latency",
+     "title": "Low-latency systems",
+     "hours": 20,
+     "topics": [
+      "Cache-friendly data layout",
+      "Kernel bypass (concept)",
+      "Lock-free programming",
+      "Profiling with perf"
+     ],
+     "resources": [
+      {
+       "t": "Agner Fog's optimisation manuals",
+       "u": "https://www.agner.org/optimize/"
+      },
+      {
+       "t": "Preshing on Programming (lock-free)",
+       "u": "https://preshing.com/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Build a limit order book matching engine in C++; publish it on GitHub with latency numbers.",
+     "level": 4
+    }
+   ],
+   "category": "role"
+  },
+  {
+   "id": "ml_engineer",
+   "title": "ML / AI Engineer",
+   "icon": "ML",
+   "builds_on": [
+    "maths",
+    "probability",
+    "software"
+   ],
+   "why": "Your strongest story: agents, RAG, systems. Target AI labs, big tech ML, AI startups.",
+   "modules": [
+    {
+     "id": "ml-fund",
+     "title": "ML fundamentals",
+     "hours": 25,
+     "topics": [
+      "Supervised learning, losses",
+      "Bias-variance, regularisation",
+      "Trees, boosting",
+      "Evaluation metrics"
+     ],
+     "resources": [
+      {
+       "t": "Stanford CS229 notes",
+       "u": "https://cs229.stanford.edu/"
+      },
+      {
+       "t": "ISLR/ISLP",
+       "u": "https://www.statlearning.com/"
+      }
+     ],
+     "books": [
+      "modern approach",
+      "artificial intelligence"
+     ],
+     "checkpoint": "Implement logistic regression and a decision tree from scratch.",
+     "level": 2
+    },
+    {
+     "id": "ml-dl",
+     "title": "Deep learning",
+     "hours": 30,
+     "topics": [
+      "Backprop from scratch",
+      "CNNs, RNNs",
+      "Transformers",
+      "Training tricks: normalisation, init, schedules"
+     ],
+     "resources": [
+      {
+       "t": "Karpathy - Neural Networks: Zero to Hero",
+       "u": "https://karpathy.ai/zero-to-hero.html"
+      },
+      {
+       "t": "Dive into Deep Learning (free)",
+       "u": "https://d2l.ai/"
+      },
+      {
+       "t": "Understanding Deep Learning (free PDF)",
+       "u": "https://udlbook.github.io/udlbook/"
+      }
+     ],
+     "books": [
+      "deep learning"
+     ],
+     "checkpoint": "Build nanoGPT following Karpathy; train on a small corpus.",
+     "level": 3
+    },
+    {
+     "id": "ml-llm",
+     "title": "LLMs: fine-tuning, RAG, agents, evals",
+     "hours": 25,
+     "topics": [
+      "Tokenisation, attention",
+      "Fine-tuning, LoRA",
+      "RAG: chunking, retrieval, reranking",
+      "Agents & tool use",
+      "Evals and red-teaming"
+     ],
+     "resources": [
+      {
+       "t": "Stanford CS224N",
+       "u": "https://web.stanford.edu/class/cs224n/"
+      },
+      {
+       "t": "Hugging Face courses",
+       "u": "https://huggingface.co/learn"
+      },
+      {
+       "t": "The Illustrated Transformer",
+       "u": "https://jalammar.github.io/illustrated-transformer/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Your TTDS RAG search engine with a written eval (precision@k, faithfulness).",
+     "level": 3
+    },
+    {
+     "id": "ml-sys",
+     "title": "ML systems & MLOps",
+     "hours": 15,
+     "topics": [
+      "Serving and batching",
+      "Feature stores, data drift",
+      "GPU utilisation",
+      "ML system design interviews"
+     ],
+     "resources": [
+      {
+       "t": "Made With ML",
+       "u": "https://madewithml.com/"
+      },
+      {
+       "t": "Full Stack Deep Learning",
+       "u": "https://fullstackdeeplearning.com/"
+      },
+      {
+       "t": "Chip Huyen - ML interviews book",
+       "u": "https://huyenchip.com/ml-interviews-book/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Design a recommendation system end-to-end, out loud, in 45 min.",
+     "level": 4
+    },
+    {
+     "id": "ml-frontier",
+     "title": "Frontier: the papers that define modern AI",
+     "level": 5,
+     "hours": 30,
+     "topics": [
+      "Transformers",
+      "Scaling laws",
+      "Compute-optimal training"
+     ],
+     "resources": [
+      {
+       "t": "Vaswani et al. 2017 — Attention Is All You Need (arXiv)",
+       "u": "https://arxiv.org/abs/1706.03762"
+      },
+      {
+       "t": "Kaplan et al. 2020 — Scaling Laws for Neural Language Models (arXiv)",
+       "u": "https://arxiv.org/abs/2001.08361"
+      },
+      {
+       "t": "Hoffmann et al. 2022 — Training Compute-Optimal LLMs (arXiv)",
+       "u": "https://arxiv.org/abs/2203.15556"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Re-derive the Chinchilla rule of thumb and apply it to a budget."
+    }
+   ],
+   "category": "role"
+  },
+  {
+   "id": "research",
+   "title": "Research Scientist / Fellowships",
+   "icon": "RS",
+   "builds_on": [
+    "maths",
+    "probability",
+    "ml_engineer"
+   ],
+   "why": "Anthropic Fellows, MATS, LASR, lab residencies: they want evidence you can run experiments and write them up.",
+   "modules": [
+    {
+     "id": "rs-papers",
+     "title": "Reading & reproducing papers",
+     "hours": 15,
+     "topics": [
+      "Three-pass reading",
+      "Reproducing a result",
+      "Keeping a research log"
+     ],
+     "resources": [
+      {
+       "t": "Keshav - How to Read a Paper (PDF)",
+       "u": "http://ccr.sigcomm.org/online/files/p83-keshavA.pdf"
+      },
+      {
+       "t": "arXiv",
+       "u": "https://arxiv.org/"
+      },
+      {
+       "t": "Distill (archive)",
+       "u": "https://distill.pub/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Reproduce one small paper result and post it on GitHub.",
+     "level": 3
+    },
+    {
+     "id": "rs-writing",
+     "title": "Research writing",
+     "hours": 8,
+     "topics": [
+      "Clear claims, honest limitations",
+      "Figures that carry the result",
+      "Turning your rendering preprint into a submission"
+     ],
+     "resources": [
+      {
+       "t": "Alignment Forum (examples of write-ups)",
+       "u": "https://www.alignmentforum.org/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Submit your preprint to a workshop or arXiv.",
+     "level": 3
+    },
+    {
+     "id": "rs-interp",
+     "title": "Interpretability & AI safety",
+     "hours": 30,
+     "topics": [
+      "Transformer circuits",
+      "Probing, activation patching",
+      "Sparse autoencoders",
+      "Evals, alignment basics"
+     ],
+     "resources": [
+      {
+       "t": "ARENA curriculum (GitHub)",
+       "u": "https://github.com/callummcdougall/ARENA_3.0"
+      },
+      {
+       "t": "Transformer Circuits thread",
+       "u": "https://transformer-circuits.pub/"
+      },
+      {
+       "t": "BlueDot Impact courses",
+       "u": "https://bluedot.org/"
+      },
+      {
+       "t": "Anthropic research",
+       "u": "https://www.anthropic.com/research"
+      }
+     ],
+     "books": [],
+     "checkpoint": "A 10-hour mini research project with a LessWrong/AF-style write-up (great for Anthropic Fellows / MATS).",
+     "level": 4
+    },
+    {
+     "id": "rs-frontier",
+     "title": "Frontier: mechanistic interpretability",
+     "level": 5,
+     "hours": 30,
+     "topics": [
+      "Superposition",
+      "Features and circuits",
+      "Open problems"
+     ],
+     "resources": [
+      {
+       "t": "Elhage et al. 2022 — Toy Models of Superposition",
+       "u": "https://transformer-circuits.pub/2022/toy_model/index.html"
+      },
+      {
+       "t": "Transformer Circuits thread",
+       "u": "https://transformer-circuits.pub/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Replicate the toy superposition result in a notebook."
+    }
+   ],
+   "category": "role"
+  },
+  {
+   "id": "data_scientist",
+   "title": "Data Scientist",
+   "icon": "DS",
+   "builds_on": [
+    "probability"
+   ],
+   "why": "SQL + stats + product sense + modelling.",
+   "modules": [
+    {
+     "id": "ds-sql",
+     "title": "SQL to interview level",
+     "hours": 15,
+     "topics": [
+      "Joins, window functions",
+      "CTEs",
+      "Aggregations and edge cases"
+     ],
+     "resources": [
+      {
+       "t": "SQLBolt",
+       "u": "https://sqlbolt.com/"
+      },
+      {
+       "t": "Mode SQL tutorial",
+       "u": "https://mode.com/sql-tutorial/"
+      },
+      {
+       "t": "DataLemur",
+       "u": "https://datalemur.com/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "50 SQL interview questions incl. window functions.",
+     "level": 1
+    },
+    {
+     "id": "ds-pandas",
+     "title": "Python data stack",
+     "hours": 10,
+     "topics": [
+      "pandas, NumPy",
+      "Visualisation",
+      "Feature engineering"
+     ],
+     "resources": [
+      {
+       "t": "Python for Data Analysis 3e (free online)",
+       "u": "https://wesmckinney.com/book/"
+      },
+      {
+       "t": "Kaggle Learn",
+       "u": "https://www.kaggle.com/learn"
+      }
+     ],
+     "books": [],
+     "checkpoint": "One end-to-end Kaggle notebook you're proud of.",
+     "level": 2
+    },
+    {
+     "id": "ds-product",
+     "title": "Experiments & product sense",
+     "hours": 10,
+     "topics": [
+      "Metrics design",
+      "A/B testing pitfalls",
+      "Causal inference basics"
+     ],
+     "resources": [
+      {
+       "t": "StatQuest",
+       "u": "https://statquest.org/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Answer 10 'metric dropped 10%, why?' cases out loud.",
+     "level": 3
+    }
+   ],
+   "category": "role"
+  },
+  {
+   "id": "salesforce",
+   "title": "Salesforce Developer / Architect",
+   "icon": "SF",
+   "builds_on": [
+    "software"
+   ],
+   "why": "Your 2 years of Apex/LWC is a real edge: senior developer and architect roles pay well, including in the UK.",
+   "modules": [
+    {
+     "id": "sf-apex",
+     "title": "Advanced Apex & platform limits",
+     "hours": 15,
+     "topics": [
+      "Bulkification, governor limits",
+      "Async: Queueable, Batch, Platform Events",
+      "Trigger frameworks",
+      "Testing strategy & mocking"
+     ],
+     "resources": [
+      {
+       "t": "Apex Developer Guide",
+       "u": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/"
+      },
+      {
+       "t": "Salesforce limits cheat sheet",
+       "u": "https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Platform Developer II exam booked.",
+     "level": 2
+    },
+    {
+     "id": "sf-lwc",
+     "title": "LWC & JavaScript",
+     "hours": 10,
+     "topics": [
+      "Component communication",
+      "Wire service, LDS",
+      "Jest testing"
+     ],
+     "resources": [
+      {
+       "t": "LWC Developer Guide",
+       "u": "https://developer.salesforce.com/docs/platform/lwc/guide"
+      },
+      {
+       "t": "JavaScript Developer I credential",
+       "u": "https://trailhead.salesforce.com/credentials/javascriptdeveloperi"
+      }
+     ],
+     "books": [],
+     "checkpoint": "JavaScript Developer I passed.",
+     "level": 2
+    },
+    {
+     "id": "sf-ai",
+     "title": "Agentforce & Data Cloud",
+     "hours": 12,
+     "topics": [
+      "Agentforce agents, topics, actions",
+      "Prompt Builder",
+      "Data Cloud basics"
+     ],
+     "resources": [
+      {
+       "t": "Agentforce Specialist credential",
+       "u": "https://trailhead.salesforce.com/credentials/agentforcespecialist"
+      },
+      {
+       "t": "Data Cloud Consultant credential",
+       "u": "https://trailhead.salesforce.com/credentials/datacloudconsultant"
+      },
+      {
+       "t": "Trailhead",
+       "u": "https://trailhead.salesforce.com/"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Agentforce Specialist passed; link your open-source Salesforce AI Agent in applications.",
+     "level": 3
+    },
+    {
+     "id": "sf-arch",
+     "title": "Integration & architecture",
+     "hours": 20,
+     "topics": [
+      "Integration patterns (request-reply, fire-and-forget, batch sync)",
+      "Large data volumes",
+      "Sharing & security model",
+      "Well-Architected framework"
+     ],
+     "resources": [
+      {
+       "t": "Salesforce Architects",
+       "u": "https://architect.salesforce.com/"
+      },
+      {
+       "t": "Integration Architect credential",
+       "u": "https://trailhead.salesforce.com/credentials/integrationarchitect"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Draw 3 integration architectures from your own work or projects (sanitised).",
+     "level": 4
+    }
+   ],
+   "category": "role"
+  },
+  {
+   "id": "slack",
+   "title": "Slack Platform Developer",
+   "icon": "SL",
+   "builds_on": [
+    "salesforce",
+    "software"
+   ],
+   "why": "Slack is Salesforce's collaboration layer; developer + Salesforce skills is a rare combo.",
+   "modules": [
+    {
+     "id": "sl-platform",
+     "title": "Slack apps: Bolt, Events API, Block Kit",
+     "hours": 12,
+     "topics": [
+      "Bolt for Python/JS",
+      "Events API & Socket Mode",
+      "Block Kit UI",
+      "OAuth & scopes"
+     ],
+     "resources": [
+      {
+       "t": "Slack developer docs",
+       "u": "https://docs.slack.dev/"
+      },
+      {
+       "t": "Bolt for Python",
+       "u": "https://docs.slack.dev/tools/bolt-python/"
+      },
+      {
+       "t": "Block Kit Builder",
+       "u": "https://app.slack.com/block-kit-builder"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Ship a Slack app that approves Salesforce changes (tie to your agent project).",
+     "level": 2
+    },
+    {
+     "id": "sl-cert",
+     "title": "Slack Developer certification",
+     "hours": 10,
+     "topics": [
+      "Workflow Builder & custom steps",
+      "Deno Slack SDK",
+      "Slack + Salesforce integration"
+     ],
+     "resources": [
+      {
+       "t": "Slack Developer credential (Trailhead)",
+       "u": "https://trailhead.salesforce.com/credentials/slackdeveloper"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Certification passed.",
+     "level": 3
+    }
+   ],
+   "category": "role"
+  },
+  {
+   "id": "trading",
+   "title": "Trading & Markets",
+   "icon": "TR",
+   "builds_on": [
+    "probability"
+   ],
+   "why": "Market intuition for trading roles and for talking credibly in quant interviews.",
+   "modules": [
+    {
+     "id": "tr-markets",
+     "title": "How markets work",
+     "hours": 12,
+     "topics": [
+      "Asset classes, exchanges, brokers",
+      "Order books, liquidity, spreads",
+      "Market microstructure"
+     ],
+     "resources": [
+      {
+       "t": "Yale ECON 252 Financial Markets (Shiller)",
+       "u": "https://oyc.yale.edu/economics/econ-252"
+      },
+      {
+       "t": "CME Group education",
+       "u": "https://www.cmegroup.com/education.html"
+      }
+     ],
+     "books": [],
+     "checkpoint": "Explain how a market maker makes and loses money.",
+     "level": 1
+    },
+    {
+     "id": "tr-ta",
+     "title": "Technical analysis (and its limits)",
+     "hours": 10,
+     "topics": [
+      "Trends, support/resistance",
+      "Indicators",
+      "Why most TA fails out-of-sample"
+     ],
+     "resources": [
+      {
+       "t": "Investopedia - technical analysis",
+       "u": "https://www.investopedia.com/technical-analysis-4689657"
+      }
+     ],
+     "books": [
+      "technical analysis",
+      "murphy"
+     ],
+     "checkpoint": "Backtest one TA rule honestly and report the result.",
+     "level": 2
+    },
+    {
+     "id": "tr-fa",
+     "title": "Fundamental analysis",
+     "hours": 10,
+     "topics": [
+      "Financial statements",
+      "Valuation: DCF, multiples",
+      "Margin of safety"
+     ],
+     "resources": [
+      {
+       "t": "MIT 15.401 Finance Theory I",
+       "u": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/"
+      }
+     ],
+     "books": [
+      "security analysis",
+      "graham"
+     ],
+     "checkpoint": "Value one listed company with a DCF and write a one-pager.",
+     "level": 3
+    }
+   ],
+   "category": "role"
+  }
+ ],
+ "levels": [
+  "Foundations",
+  "Core",
+  "Advanced",
+  "Expert",
+  "Frontier"
+ ]
+}

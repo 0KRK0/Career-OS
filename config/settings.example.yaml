@@ -1,0 +1,9 @@
+# Copy to settings.yaml (the app does this for you) - everything here can also be set in the app.
+books_dir: ''          # optional folder of your own PDFs/books for Learn, e.g. D:\\books
+profile_dir: ''        # your career folder: CV + documents about you (chosen in the setup wizard)
+cv_path: ''            # the CV file forms upload
+resume_path: ''        # optional shorter resume
+use_resume_for_countries: []   # countries where the short resume is uploaded instead of the CV, e.g. [US, IN]
+llm:
+  provider: claude     # claude | codex (ChatGPT) | gemini
+scout_times: ['07:30', '17:30']

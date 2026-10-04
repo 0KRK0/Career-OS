@@ -1,0 +1,66 @@
+[
+ {
+  "title": "Anthropic Fellows Program - AI Safety & Security (January cohort)",
+  "org": "Anthropic",
+  "kind": "fellowship",
+  "location": "London, UK / remote in UK, US or Canada",
+  "country": "UK",
+  "url": "https://job-boards.greenhouse.io/anthropic/jobs/5183044008",
+  "deadline": "",
+  "salary": "£2,310 per week (40 h/week, 4 months) + ~$15k/month compute",
+  "eligibility": "Rolling. Needs existing work authorisation in the UK/US/Canada - Anthropic cannot sponsor visas for fellows. Full-time 4 months; partial availability considered case by case. Check your visa's work conditions before accepting.",
+  "description": "Checked 25 Sep 2026 on the official posting: applications open on a rolling basis for the January cohort; application via the Constellation partner portal. Empirical AI safety research with mentorship. Python fluency required.",
+  "for_tracks": [
+   "research",
+   "ml"
+  ]
+ },
+ {
+  "title": "MATS - Summer 2027 cohort (watch; Winter 2027 closed 6 Sep 2026)",
+  "org": "MATS",
+  "kind": "fellowship",
+  "location": "London, UK / Berkeley, US",
+  "country": "UK",
+  "url": "https://www.matsprogram.org/apply",
+  "deadline": "",
+  "salary": "$1,600/week for 12 weeks + housing, travel, meals (Winter 2027 terms)",
+  "eligibility": "Non-US citizens eligible; no visa support for London. Watch for the next round.",
+  "description": "AI alignment research programme with mentors. Build a small interpretability/evals project first (Learn → Research track).",
+  "for_tracks": [
+   "research",
+   "ml"
+  ]
+ },
+ {
+  "title": "LASR Labs - next round (watch; Winter 2027 closed 20 Sep 2026)",
+  "org": "LASR Labs",
+  "kind": "fellowship",
+  "location": "London, UK",
+  "country": "UK",
+  "url": "https://www.lasrlabs.org/",
+  "deadline": "",
+  "salary": "£15,000 stipend for 13 weeks (Winter 2027 terms)",
+  "eligibility": "ML engineering experience + quantitative skills; full-time in London.",
+  "description": "AI safety research programme in London. Watch for the Summer 2027 call.",
+  "for_tracks": [
+   "research",
+   "ml"
+  ]
+ },
+ {
+  "title": "Pivotal Research Fellowship - next round (watch)",
+  "org": "Pivotal",
+  "kind": "fellowship",
+  "location": "London, UK",
+  "country": "UK",
+  "url": "https://www.pivotal-research.org/fellowship",
+  "deadline": "",
+  "salary": "Stipend (2026 round: £8,000)",
+  "eligibility": "Full-time research fellowship in London.",
+  "description": "AI safety research fellowship. Check the page for the next deadline.",
+  "for_tracks": [
+   "research",
+   "ml"
+  ]
+ }
+]
